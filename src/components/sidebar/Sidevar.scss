@@ -1,0 +1,102 @@
+.sidebar {
+  display: flex;
+  flex: 0.35;
+  height: 100vh;
+  // background-color: #2e3136;
+  color: #fff;
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e3136;
+    padding: 7px 15px;
+  }
+  .sidebarRight {
+    position: relative;
+    background-color: #36393e;
+    width: 300px;
+    flex-grow: 1;
+
+    .sidebarTop {
+      color: #fff;
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+    }
+
+    .sidebarChannels {
+      padding: 13px;
+
+      .sidebarChannelsHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        align-items: center;
+
+        .sidebarHeader {
+          display: flex;
+        }
+        .sidebarAddIcon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .sidebarFooter {
+      position: absolute;
+      bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93%;
+      padding-bottom: 10px;
+      border-top: 1px solid #686a6e;
+      padding-top: 10px;
+      margin-left: -3px;
+    }
+
+    .sidebarAccount {
+      display: flex;
+      align-items: center;
+      img {
+        width: 60px;
+        border-radius: 9999px;
+        cursor: pointer;
+      }
+      .accountName {
+        margin-left: 5px;
+
+        h4 {
+          color: #fff;
+          font-weight: 500;
+        }
+        span {
+          color: #686a6e;
+        }
+      }
+    }
+
+    .sidebarVoice {
+      display: flex;
+      align-items: center;
+      color: gray;
+    }
+  }
+
+  .serverIcon {
+    width: 60px;
+    height: 60px;
+    background-color: #36393e;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 7px;
+    img {
+      position: absolute;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
